@@ -40,17 +40,17 @@ background:rgba(0,0,0,0.55);
 z-index:-1;
 }
 
-/* 🔥 TOP LEFT SMALL BRAND */
-.topbrand{
+/* LOGO TOP LEFT */
+.logo{
 position:fixed;
 top:10px;
 left:10px;
+background:rgba(0,0,0,0.6);
 color:white;
-font-size:14px;
+padding:8px 12px;
+border-radius:8px;
+font-size:13px;
 font-weight:bold;
-background:rgba(0,0,0,0.5);
-padding:6px 10px;
-border-radius:6px;
 z-index:1000;
 }
 
@@ -62,14 +62,9 @@ justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
-padding:20px;
 }
 
-h1{
-font-size:28px;
-margin:10px 0;
-}
-
+h1{font-size:28px;margin:10px 0;}
 p{margin:10px 0;}
 
 .btn{
@@ -83,6 +78,18 @@ font-weight:bold;
 
 .call{background:#111;color:white;}
 .whatsapp{background:#25D366;color:white;}
+
+/* BOOK BUTTON */
+.bookbtn{
+display:inline-block;
+margin-top:10px;
+background:#ff9800;
+color:white;
+padding:12px 18px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+}
 
 /* SERVICES */
 h2{
@@ -103,6 +110,12 @@ background:white;
 border-radius:12px;
 overflow:hidden;
 box-shadow:0 3px 10px rgba(0,0,0,0.15);
+cursor:pointer;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
 }
 
 .card img{
@@ -184,9 +197,9 @@ padding:15px;
 <div class="bg"></div>
 <div class="overlay"></div>
 
-<!-- 🔥 TOP LEFT SMALL NAME -->
-<div class="topbrand">
-MO IRFAN ELECTRICAL
+<!-- LOGO -->
+<div class="logo">
+⚡ MO IRFAN ELECTRICAL
 </div>
 
 <!-- HERO -->
@@ -197,6 +210,14 @@ MO IRFAN ELECTRICAL
 
 <button class="btn call" onclick="location.href='tel:7028387350'">📞 Call Now</button>
 <button class="btn whatsapp" onclick="location.href='https://wa.me/917028387350'">💬 WhatsApp</button>
+
+<br>
+
+<a class="bookbtn"
+href="https://wa.me/917028387350?text=Hello%20I%20want%20to%20book%20an%20electrician%20service%20at%20my%20location">
+⚡ Book Electrician
+</a>
+
 </div>
 </header>
 
@@ -208,19 +229,19 @@ MO IRFAN ELECTRICAL
 <div class="card">
 <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
 <h3>Building Electrical Contract</h3>
-<p>Complete wiring and installation work.</p>
+<p>Complete wiring & installation work.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
 <h3>House Wiring</h3>
-<p>Safe home electrical system.</p>
+<p>Safe home wiring system.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e">
 <h3>Fan Installation</h3>
-<p>Fan fitting and repair service.</p>
+<p>Fan fitting & repair service.</p>
 </div>
 
 <div class="card">
@@ -276,6 +297,20 @@ MO IRFAN ELECTRICAL
 <!-- FLOAT BUTTONS -->
 <a class="float callbtn" href="tel:7028387350">📞</a>
 <a class="float whabtn" href="https://wa.me/917028387350">💬</a>
+<footer style="
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:30px;
+">
 
+<p>📞 7028387350 | 💬 WhatsApp Available 24/7</p>
+
+<p style="font-size:12px;opacity:0.7;">
+© 2026 All Rights Reserved | Powered by MO IRFAN Electrical
+</p>
+
+</footer>
 </body>
 </html>
